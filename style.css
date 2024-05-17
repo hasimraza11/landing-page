@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(115deg, rgba(171,220,241,1) 6%, rgba(118,211,116,1) 21%, rgba(178,206,58,1) 40%, rgba(209,194,66,1) 55%, rgba(238,142,68,1) 82%, rgba(244,239,235,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-family: "Nunito", sans-serif;
+    
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+h1{
+    font-size: 35px;
+    padding-bottom: 25px;
+}
+P{
+    font-size: 18px;
+    line-height: 32px;
+    width: 60%;
+    padding-bottom: 25px;
+   
+}
+.white{
+    height: 200px;
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 15px;
+}
+.countdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+.column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#days{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: rgb(126,199,214);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 33px;
+    font-weight: 700;
+
+}
+#hours{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: rgb(110,196,95);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 33px;
+    font-weight: 700;
+}
+#minutes{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: rgb(197,201,62);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 33px;
+    font-weight: 700;
+}
+#seconds{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: rgb(227,136,66);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 33px;
+    font-weight: 700;
+}
+h2{
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#box{
+    height: 40px;
+    width: 400px;
+    margin-top: 10px;
+    padding-left: 10px;
+    font-weight: 700;
+    border: 4px solid rgb(178,178,178);
+    border-right: none;
+    
+}
+button{
+    height: 40px;
+    width: 100px;
+    border: 4px solid rgb(178,178,178);
+    background-color: #000;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    right: 5px;
+    border-left: none;
+   
+    cursor: pointer;
+}
+button:hover{
+    
+    background-color: rgb(38,195,228);
+}
+.icon-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100px;
+    padding-top: 50px;
+}
+.icon-1, .icon-2, .icon-3, .icon-4, .icon-5{
+    font-size: 25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #222;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+    
+    
+}
+.icon-1:hover, .icon-2:hover, .icon-3:hover, .icon-4:hover, .icon-5:hover{
+    box-shadow: 0 40px 0 -20px #19b73e,
+                0 -40px 0 -20px #dc0028,
+                -40px 0 0 -20px #1328db,
+                40px 0 0 -20px #ff560b;
+                
+}
+   
+ /* #h:hover{   
+   color: #1877F2;
+}
+#a:hover{
+    color: rgb(29, 161, 242);
+}
+ #s:hover{
+    color: #FCAF45;
+}
+ #i:hover{
+    color: #0072b1;
+ } */
+
+#h, #a, #s, #i, #m{
+    color: #24292e;
+}
+/* /* ////////////////////////////////////////////////////////////////////////////// */
+@media(max-width:780px){
+    h1{
+        font-size: 25px;
+        padding-bottom: 15px;
+    }
+    P{
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .white{
+        height: 160px;
+        padding-top: 15px;
+    }
+    #hours, #days, #minutes, #seconds{
+        height: 60px;
+        width: 60px;
+        font-size: 30px;
+    }
+    h2{
+        font-size: 12px;
+        line-height: 30px;
+    }
+    #box{
+        height: 30px;
+        width: 300px;
+        margin-top: 5px;
+        border: 3px solid rgb(178,178,178);
+        font-weight: 500;
+    }
+    button{
+        height: 30px;
+        width: 80px;
+        border: 3px solid rgb(178,178,178);
+        border-left: none;
+        font-size: 11px;
+    }
+    .icon-box{
+        gap: 0px;
+        height: 80px;
+        padding-top: 30px;
+    }
+    .icon-1, .icon-2, .icon-3, .icon-4, .icon-5{
+        font-size: 20px;
+        height: 40px;
+        width: 40px;
+        margin: 10px;
+    }
+}
+@media(max-width:530px){
+    h1{
+        width: 70%;
+        margin: auto;
+    }
+    p{
+        width: 80%;
+        margin: auto;
+    }
+}
+@media(max-width:390px){
+    #hours, #days, #minutes, #seconds{
+        height: 50px;
+        width: 50px;
+        font-size: 25px;
+    }
+    h2{
+        font-size: 11px;
+    }
+    .row{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5px;
+        
+    }
+    #box{
+        height: 30px;
+        width: 300px;
+        margin-top: 5px;
+        border: 3px solid rgb(178,178,178);
+        font-weight: 500;
+    }
+    button{
+        height: 28px;
+        width: 70px;
+        font-size: 10px;
+        font-weight: 500;
+        right: 0px;
+        border: 2px solid rgb(178,178,178);
+    }
+    .white{
+        height: 180px;
+        padding-top: 15px;
+    }
+}
+@media(max-width:330px){
+    h1{
+        width: 90%;
+    }
+    p{
+      font-size: 12px;
+      width: 85%;
+    }
+    #hours, #days, #minutes, #seconds{
+        height: 40px;
+        width: 40px;
+        font-size: 19px;
+    }
+    .countdown{
+       gap: 20px;
+    }
+    h2{
+       font-size:9px;
+    }
+    #box{
+        height: 30px;
+        width: 230px;
+        margin-top: 15px;
+        border: 2px solid rgb(178,178,178);
+        font-size: 10px;
+    }
+    button{
+        height: 26px;
+        width: 65px;
+        font-size: 9px;
+        font-weight: 500;
+    }
+    .icon-box{
+        gap: 0px;
+        height: 60px;
+        padding-top: 30px;
+    }
+    .icon-1, .icon-2, .icon-3, .icon-4, .icon-5{
+        font-size: 15px;
+        height: 35px;
+        width: 35px;
+        margin: 5px;
+        gap: 5px;
+    }
+}
+/* //////////////////////////////////////////////////////////////////// THE END ////////////////////////////////////////////////////////// */
